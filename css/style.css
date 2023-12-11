@@ -23,6 +23,13 @@ footer hr{
   height: 1px;
   background-image: linear-gradient(to right, white, #cccc , white);
 }
+footer a{
+  text-decoration: none;
+  color: beige;
+}
+footer a:hover{
+  color: #007bff;
+}
 @keyframes cambiar {
   0% {
     background-position: 0 50%;
