@@ -16,7 +16,13 @@ body {
   position: relative;
   animation: cambiar 5s ease-in-out infinite;
 }
-
+label{
+  color: wheat;
+  font-family: 'Montserrat', sans-serif;
+}
+footer img{
+  height: 450px;
+}
 footer hr{
   margin: 20px, 0;
   border: 0;
