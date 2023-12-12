@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/iniciodeseccion.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="form-container">
+          <h2>Iniciar sesión</h2>
+          <form id="login-form">
+            <input type="text" id="username" placeholder="Nombre de usuario o correo electrónico" required >
+            <input type="password" id="password" placeholder="Contraseña" required maxlength="50" minlength="8">
+            <button type="submit">Ingresar</button>
+          </form>
+          <a href="#" id="forgot-password-link">¿Olvidaste tu contraseña?</a>
+        </div>
+      </div>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Los pasos para recuperar la contraseña se muestran aquí...</p>
+        </div>
+      </div>
+      <script src="../js/iniciodeseccion.js"></script>
+</body>
+</html>
