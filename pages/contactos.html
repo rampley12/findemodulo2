@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ramiro,Francisco,Franco,Maia" />
+    <meta name="description" content="practica con javascript" />
+    <meta
+      name="keywords"
+      content="entraga de proyecto final del modulo 2 Rolling Movies"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Rolling Movies</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+        <main class="flex-grow-1 d-flex flex-column align-items-lg-center justify-content-md-between min-vh-lg-100 mt-md-4 mt-sm-2 ">
+            <div class="container text-md-start ">
+              <div class="row justify-content-lg-center   justify-content-md-center mb-md-1">
+                  <div class="col-sd-12 col-md-6 text-center text-lg-start mt-md-5 justify-content-center">
+                    <img class= "img-fluid " src="../img/contacto fondo transparente.png" alt="">
+                  </div>
+                  <div class="col-sd-12 col-md-6 col-lg-5 text-md-start text-lg-start  ">
+                    <div class="mb-3">
+                      <label for="nombreApellido" class="form-label">Nombre y apellido</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nombreApellido"
+                        placeholder="Juan Perez"
+                        minlength="5"
+                        maxlength="50"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="Nacionalidad" class="form-label">Pais</label>
+                    
+                      <select>
+                        <option value="1">Chile</option>
+                        <option value="2">Brasil</option>
+                        <option value="3">Uruguay</option>
+                        <option value="4">Cuba</option>
+                        <option value="5">Mexico</option>
+                        <option value="6">Paraguay</option>
+                      </select>
+                     
+                    </div>
+                    <div class="mb-3">
+                      <label for="Provincia" class="form-label">Provincia o Estado</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="Provincia"
+                        placeholder="Ej: Tucumán"
+                        minlength="5"
+                        maxlength="30"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="Correo" class="form-label">Email </label>
+                      <input type="email" class="form-control" id="Correo" placeholder="Ej: MartinJuarez@email.com" minlength="5"
+                      maxlength="80"
+                      required >
+                    </div>
+                    <div class="mb-3">
+                      <label for="Numero" class="form-label">Telefono</label>
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="Numero"
+                        placeholder="381333015"
+                        min="5"
+                        max="9"
+                        maxlength="9"
+                        required
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="Duda" class="form-label">Consulta</label>
+                      <textarea class="form-control" id="Duda" rows="3" placeholder="agregue aqui su consulta"  minlength="30"
+                      maxlength="150"
+                      required></textarea>
+                     
+                    </div>
+                    <div class="mb-3">
+                      <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                  </div>
+                
+          </main>
+    </main>
+    <footer class="bg-dark text-light py-2 mt-auto">
+      <div class="container text-md-center">
+        <div class="d-flex flex-column">
+          <div class="col-12">
+            <div class="row align-content-between">
+              <div class="col-md-4 col-lg-4 text-center">
+                <a href="../index.html"
+                  ><img
+                    src="../img/logotipo/logo fondo transparente.png"
+                    alt="logo de la empresa"
+                /></a>
+              </div>
+
+              <div class="col-md-4 col-lg-4 text-center">
+                <hr class="d-md-none" />
+                <h4>Conoce más</h4>
+                <hr class="d-none d-md-block" />
+                <div class="d-flex flex-column">
+                  <a href="../pages/"><h5>Acerca de nosotros</h5></a>
+                  <a href="contactos.html"><h5>Contacto</h5></a>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-lg-4 text-center">
+                <hr class="d-md-none" />
+                <h4>Siguenos</h4>
+                <hr class="d-none d-md-block" />
+                <div class="d-flex justify-content-center">
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="mx-4"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-envelope-check"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center">
+          <hr class="w-100" />
+          <p>Copyright&copy; 2023 RollingMovie</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
