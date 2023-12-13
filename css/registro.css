@@ -1,0 +1,15 @@
+body{
+    
+    background-image: url('../img/pagina\ de\ registro.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    max-width: 640px;
+    background: linear-gradient(162deg, rgb(230, 239, 237) 0%, rgb(213, 223, 215) 0%, rgba(229, 232, 230, 0.725) 32%, rgb(215, 223, 226) 100%, rgb(219, 231, 233) 100%);
+    border-radius: 8px;
+
+}
+.margenesdelregistro{
+margin: 50px;
+}
