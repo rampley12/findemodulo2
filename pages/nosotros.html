@@ -23,7 +23,94 @@
     <title>Rolling Movies</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a
+            href="../index.html"
+            class="navbar-brand text-light d-flex justify-content-sm-center d-flex justify-content-lg-start d-flex justify-content-md-center"
+            ><img
+              src="../img/logo fondo transparente.png"
+              alt="logo"
+              width="100px"
+          /></a>
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <section>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-light"
+                    href="./IniciarSesion.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Cuenta
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./IniciarSesion.html"
+                        >Iniciar Sesion</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./Registro.html"
+                        >Crear Cuenta</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </section>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./Contacto.html"
+                  >Contacto</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light"
+                  href="./Nosotros.html"
+                  aria-disabled="true"
+                  >Nosotros</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-zoom-in"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
       <section class="container">
         <div class="container col-md-9 col-lg-9 py-2">
