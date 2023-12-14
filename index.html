@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Ramiro,Francisco,Franco,Maia" />
     <meta name="description" content="practica con javascript" />
-    <meta name="keywords" content="entraga de proyecto final del modulo 2" />
+    <meta
+      name="keywords"
+      content="entraga de proyecto final del modulo 2 Rolling Movies"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,15 +20,19 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Rolling Movi</title>
+    <title>Rolling Movies</title>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg navbar-transparent">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a
+            href="../index.html"
+            class="navbar-brand text-light d-flex justify-content-sm-center d-flex justify-content-lg-start d-flex justify-content-md-center"
+            ><img src="./img/logo fondo transparente.png" alt="logo" width="100px"
+          /></a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler bg-light"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -36,41 +43,66 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
                 >
-                  Categorias
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
               </li>
+              <section>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-light"
+                    href="./IniciarSesion.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Cuenta
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./IniciarSesion.html"
+                        >Iniciar Sesion</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./Registro.html"
+                        >Crear Cuenta</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </section>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./Contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light"
+                  href="./Nosotros.html"
+                  aria-disabled="true"
+                  >Nosotros</a
+                >
+              </li>
+           
             </ul>
             <form class="d-flex" role="search">
               <input
                 class="form-control me-2"
                 type="search"
-                placeholder="Search"
+                placeholder="Buscar"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
-                Search
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-zoom-in"></i>
               </button>
             </form>
           </div>
@@ -83,8 +115,15 @@
         <div class="row">
           <div class="overlay rounded">
             <h1 class="display-1 mb-3">Elijo Creer</h1>
-            <p class="lead mb-3">Homenaje a la tenacidad y dedicación de la selección argentina en su búsqueda de la gloria y tiene como objetivo que todos los hinchas, puedan rememorar y compartir la obtención de la Copa del Mundo.</p>
-            <button type="button" class="btn btn-primary mb-2">Reproducir</button>
+            <p class="lead mb-3">
+              Homenaje a la tenacidad y dedicación de la selección argentina en
+              su búsqueda de la gloria y tiene como objetivo que todos los
+              hinchas, puedan rememorar y compartir la obtención de la Copa del
+              Mundo.
+            </p>
+            <button type="button" class="btn btn-primary mb-2">
+              Reproducir
+            </button>
           </div>
         </div>
       </section>
@@ -198,40 +237,51 @@
         <div class="d-flex flex-column">
           <div class="col-12">
             <div class="row align-content-between">
-              <div class="col-md-12 col-lg-3 text-center text-lg-start">
-                <img src="" alt="logo_streaming" />
+              <div class="col-md-4 col-lg-4 text-center">
+                <a href="index.html"
+                  ><img
+                    src="./img/logo fondo transparente.png"
+                    alt="logo de la empresa"
+                /></a>
               </div>
-              <div class="col-md-4 col-lg-3 text-center text-lg-start">
-                <div class="d-flex justify-content-center justify-content-lg-start">  
-                  <a href="#" ><i class="bi bi-instagram"></i></i></a>
-                  <a href="#" class="mx-4"><i class="bi bi-twitter-x"></i></a>
-                  <a href="#"><i class="bi bi-envelope-check"></i></a>
+
+              <div class="col-md-4 col-lg-4 text-center">
+                <hr class="d-md-none" />
+                <h4>Conoce más</h4>
+                <hr class="d-none d-md-block" />
+                <div class="d-flex flex-column">
+                  <a href="./pages/nosotros.html"
+                    ><h5>Acerca de nosotros</h5></a
+                  >
+                  <a href="./pages/contactos.html"><h5>Contacto</h5></a>
                 </div>
               </div>
-              <div class="col-md-4 col-lg-3 text-center text-lg-start">
-                <a href=""><h6>Acerca de nosotros</h6></a>
-                
-              </div>
-              <div class="col-md-4 col-lg-3 text-center text-lg-start">
-                <a href="../findemodulo2/pages/contactos.html"><h6>Contacto</h6></a>
 
+              <div class="col-md-4 col-lg-4 text-center">
+                <hr class="d-md-none" />
+                <h4>Siguenos</h4>
+                <hr class="d-none d-md-block" />
+                <div class="d-flex justify-content-center">
+                  <a href="#"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="mx-4"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#"><i class="bi bi-envelope-check"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="col-12 text-center">
-          <hr class="w-100"/>
-          <p>&copy;RollingMovie</p>
+          <hr class="w-100" />
+          <p>Copyright&copy; 2023 RollingMovie</p>
         </div>
       </div>
     </footer>
-
-    <script src="./js/app.js"></script>
-    <script
+<script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/app.js"></script>
+    
   </body>
 </html>
