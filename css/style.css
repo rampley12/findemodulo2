@@ -1,6 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+}
+.card-title {
+  font-family: "Shrikhand", serif;
+  font-size: large;
+}
+.card {
+  background-color: transparent;
+}
+
+.fotoRadius {
+  border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  border: 0px;
 }
 
 body {
@@ -16,7 +36,22 @@ body {
   position: relative;
   animation: cambiar 5s ease-in-out infinite;
 }
-
+footer img {
+  height: 120px;
+}
+footer hr {
+  margin: 20px, 0;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, white, #cccc, white);
+}
+footer a {
+  text-decoration: none;
+  color: beige;
+}
+footer a:hover {
+  color: #007bff;
+}
 @keyframes cambiar {
   0% {
     background-position: 0 50%;
@@ -35,30 +70,42 @@ body {
 }
 .overlay {
   background-color: rgba(0, 0, 0, 0.238);
-  width: 90%;
+  width: 60%;
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: start;
   color: #fff;
 }
-/* Oculta el párrafo en dispositivos con un ancho de pantalla igual o menor a 600px */
-@media (max-width: 500px) {
+
+/* Estilos para móviles */
+@media (max-width: 767px) {
   .overlay p {
+    display: none;
+  }
+  .carDesk {
     display: none;
   }
 }
 
-.reproducir-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 991px) {
+  .carDesk {
+    display: none;
+  }
 }
+
+/* Estilos para escritorio */
+@media (min-width: 992px) {
+  .carMob {
+    display: none;
+  }
+}
+
+
 
 .reproducir-btn:hover {
   background-color: #2980b9;
 }
+
