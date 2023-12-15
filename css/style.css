@@ -66,7 +66,6 @@ footer a:hover {
 /* Franco */
 .destacada {
   position: relative;
-  width: 100%;
 }
 .overlay {
   background-color: rgba(0, 0, 0, 0.238);
@@ -78,7 +77,6 @@ footer a:hover {
   text-align: start;
   color: #fff;
 }
-
 /* Estilos para móviles */
 @media (max-width: 767px) {
   .overlay p {
@@ -101,11 +99,7 @@ footer a:hover {
   .carMob {
     display: none;
   }
+  .carru5 img {
+    height: 70vh;
+  }
 }
-
-
-
-.reproducir-btn:hover {
-  background-color: #2980b9;
-}
-
