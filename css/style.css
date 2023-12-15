@@ -66,34 +66,40 @@ footer a:hover {
 /* Franco */
 .destacada {
   position: relative;
-  width: 100%;
 }
 .overlay {
   background-color: rgba(0, 0, 0, 0.238);
-  width: 90%;
+  width: 60%;
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: start;
   color: #fff;
 }
-/* Oculta el párrafo en dispositivos con un ancho de pantalla igual o menor a 600px */
-@media (max-width: 500px) {
+/* Estilos para móviles */
+@media (max-width: 767px) {
   .overlay p {
+    display: none;
+  }
+  .carDesk {
     display: none;
   }
 }
 
-.reproducir-btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #3498db;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 991px) {
+  .carDesk {
+    display: none;
+  }
 }
 
-.reproducir-btn:hover {
-  background-color: #2980b9;
+/* Estilos para escritorio */
+@media (min-width: 992px) {
+  .carMob {
+    display: none;
+  }
+  .carru5 img {
+    height: 70vh;
+  }
 }
