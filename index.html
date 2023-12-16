@@ -114,14 +114,9 @@
       </nav>
     </header>
     <main>
+      <!-- banner principal -->
       <section class="my-4 container-fluid destacada">
-        <video
-          src="./assets/elijo-creer.mp4"
-          class="w-100"
-          autoplay
-          muted
-          controls
-        ></video>
+        <img class="img-fluid w-100 pt-5" src="./assets/argentina-campeon-qatar-2023jpg.webp" alt="">
         <div class="row">
           <div class="overlay rounded">
             <h1 class="display-1 mb-3">Elijo Creer</h1>
@@ -131,9 +126,23 @@
               hinchas, puedan rememorar y compartir la obtención de la Copa del
               Mundo.
             </p>
-            <button type="button" class="btn btn-primary mb-2">
+            <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#modalBanner">
               Reproducir
             </button>
+          </div>
+        </div>
+        <!-- modal banner -->
+        <div class="modal" tabindex="-1" id="modalBanner">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+                <h5 class="modal-title text-light">Elijo Creer</h5>
+                <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body d-flex justify-content-center">
+                <video class="w-100" src="./assets/elijo-creer.mp4" controls></video>
+              </div>
+            </div>
           </div>
         </div>
       </section>
