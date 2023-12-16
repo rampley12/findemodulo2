@@ -64,6 +64,12 @@ footer a:hover {
   }
 }
 /* Franco */
+h1, h2, h3, h5 {
+  font-family: Shrikhand;
+}
+p {
+  font-family: Montserrat;
+}
 .destacada {
   position: relative;
 }
