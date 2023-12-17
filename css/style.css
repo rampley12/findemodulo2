@@ -20,7 +20,10 @@ label{
   color: wheat;
   font-family: 'Montserrat', sans-serif;
 }
-footer img{
+input{
+  font-family: 'Montserrat', sans-serif;
+}
+  footer img{
   height: 350px;
 }
 footer hr{
