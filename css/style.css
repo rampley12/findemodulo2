@@ -5,6 +5,14 @@
   margin: 0;
   padding: 0;
 }
+
+.administradorOculto {
+  display: none;
+}
+
+.administradorMostrar {
+  display: inline;
+}
 p {
   font-family: "Montserrat", sans-serif;
 }

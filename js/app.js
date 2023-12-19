@@ -6,9 +6,15 @@ document
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
     const usuarioAdministrador = "admin@admin.com";
-    const usuarioContrasenia = "admin";
-    // Verificar las credenciales (esto es solo un ejemplo, no lo uses en un entorno de producción)
+    const usuarioContrasenia = "admin123";
+
     if (username === usuarioAdministrador && password === usuarioContrasenia) {
       console.log("Inicio de sesión exitoso");
+
+      localStorage.setItem("usuarioHaIniciadoSesion", "true");
+
+      window.location.href = "../index.html";
+    } else {
+      console.log("Credenciales incorrectas");
     }
   });
