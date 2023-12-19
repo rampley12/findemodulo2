@@ -5,6 +5,14 @@
   margin: 0;
   padding: 0;
 }
+
+.administradorOculto {
+  display: none;
+}
+
+.administradorMostrar {
+  display: inline;
+}
 p {
   font-family: "Montserrat", sans-serif;
 }
@@ -103,9 +111,6 @@ footer a:hover {
   }
 }
 
-
-
 .reproducir-btn:hover {
   background-color: #2980b9;
 }
-
