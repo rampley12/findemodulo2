@@ -9,12 +9,8 @@ document
     const usuarioContrasenia = "admin123";
 
     if (username === usuarioAdministrador && password === usuarioContrasenia) {
-      console.log("Inicio de sesión exitoso");
-
       localStorage.setItem("usuarioHaIniciadoSesion", "true");
 
       window.location.href = "../index.html";
-    } else {
-      console.log("Credenciales incorrectas");
     }
   });
