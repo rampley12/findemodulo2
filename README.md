@@ -1,3 +1,13 @@
+# Rolling Movies
+
+realiza un readme para github que de una web de plataforma de peliculas que contenga lo siguiente:
+uso de lenguajes html, css, bootstrap, javascript
+index con banner principal y carruseles con peliculas
+pagina de contacto con un formulario.
+pagina de sobre nosotros con descripcion de los creadores.
+seccion administracion realizacion de un crud.
+uso de logica javascript para poder hacer el login, el registro del cliente.
+ChatGPT
 Plataforma de Películas - README
 Este proyecto es una plataforma web para la visualización de películas, implementando tecnologías web como HTML, CSS, Bootstrap y JavaScript. Además, se ha incorporado una sección de administración que permite realizar operaciones CRUD (Crear, Leer, Actualizar y Borrar).
 
@@ -34,3 +44,14 @@ Explora las diferentes secciones de la plataforma, incluyendo la administración
 ¡Disfruta de la experiencia cinematográfica en nuestra plataforma web!
 
 Nota: Este proyecto es parte de un ejercicio ficticio y no incluye una base de datos real. La lógica de login y registro es simulada con JavaScript y no debe utilizarse en entornos de producción sin una implementación adecuada de seguridad.
+
+ ## Librerias 📚
+ - bootraps v5.3.2  https://getbootstrap.com/  
+ - sweetalert2 https://sweetalert2.github.io/
+ ## autores
+ - Franco Sanchez 👌
+- Ramiro Vaca 😎  
+- Francisco Romano ✨
+- Maia Gutierrez 🎉
+## Trabajo Final 
+link de la web: https://rollingmovies20.netlify.app/
