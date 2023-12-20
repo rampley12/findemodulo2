@@ -27,7 +27,6 @@ p {
 .card {
   background-color: transparent;
 }
-
 .fotoRadius {
   border-radius: 200px 200px 200px 200px;
   -moz-border-radius: 200px 200px 200px 200px;
@@ -36,17 +35,10 @@ p {
 }
 
 body {
-  width: 100%;
+  background-image: url("../img/error404.jpg");
+  background-size: cover;
   height: 100vh;
-  background: linear-gradient(
-    135deg,
-    RGB(0, 0, 0),
-    RGB(1, 1, 41),
-    RGB(40, 0, 60)
-  );
-  background-size: 400% 400%;
-  position: relative;
-  animation: cambiar 5s ease-in-out infinite;
+  margin: 0;
 }
 footer img {
   height: 120px;
@@ -97,6 +89,10 @@ footer a:hover {
 }
 /* Estilos para móviles */
 @media (max-width: 767px) {
+  body {
+    background-size: 100% 100%;
+    margin: 0;
+  }
   .overlay p {
     display: none;
   }
