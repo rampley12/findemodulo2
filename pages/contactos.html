@@ -23,11 +23,98 @@
     <title>Rolling Movies</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav class="navbar navbar-expand-lg" id="nosotrosNav">
+        <div class="container-fluid">
+          <a
+            href="../index.html"
+            class="navbar-brand text-light d-flex justify-content-sm-center d-flex justify-content-lg-start d-flex justify-content-md-center"
+            ><img
+              src="../img/logo fondo transparente.png"
+              alt="logo"
+              width="100px"
+          /></a>
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <section>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-light"
+                    href="./IniciarSesion.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Cuenta
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="./iniciodeseccion.html"
+                        >Iniciar Sesion</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="./Registro.html"
+                        >Crear Cuenta</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </section>
+
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./contactos.html"
+                  >Contacto</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light"
+                  href="./Nosotros.html"
+                  aria-disabled="true"
+                  >Nosotros</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-zoom-in"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main
       class="flex-grow-1 d-flex flex-column align-items-lg-center justify-content-md-between min-vh-lg-100 mt-md-4 mt-sm-2"
     >
-      <div class="container text-md-start">
+      <div class="container text-md-start text-light">
         <div
           class="row justify-content-lg-center justify-content-md-center mb-md-1"
         >
@@ -118,7 +205,7 @@
               ></textarea>
             </div>
             <div class="mb-3">
-              <button type="submit" class="btn btn-dark">Enviar</button>
+              <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
           </div>
         </div>
@@ -151,9 +238,13 @@
                 <h4>Síguenos</h4>
                 <hr class="d-none d-md-block" />
                 <div class="d-flex justify-content-center">
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                  <a href="#" class="mx-4"><i class="bi bi-twitter-x"></i></a>
-                  <a href="#"><i class="bi bi-envelope-check"></i></a>
+                  <a href="./error404.html"><i class="bi bi-instagram"></i></a>
+                  <a href="./error404.html" class="mx-4"
+                    ><i class="bi bi-twitter-x"></i
+                  ></a>
+                  <a href="./error404.html"
+                    ><i class="bi bi-envelope-check"></i
+                  ></a>
                 </div>
               </div>
             </div>
