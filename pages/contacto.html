@@ -32,73 +32,77 @@
                     <img class= "img-fluid " src="../img/contacto fondo transparente.png" alt="">
                   </div>
                   <div class="col-sd-12 col-md-6 col-lg-5 text-md-start text-lg-start  ">
-                    <div class="mb-3">
-                      <label for="nombreApellido" class="form-label">Nombre y apellido</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="nombreApellido"
-                        placeholder="Juan Perez"
-                        minlength="5"
-                        maxlength="50"
-                        required
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label for="Nacionalidad" class="form-label">Pais</label>
+                    <form id="formularioContacto">
+                        <div class="mb-3">
+                            <label for="nombreApellido" class="form-label">Nombre y apellido</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="nombreApellido"
+                              placeholder="Juan Perez"
+                              minlength="5"
+                              maxlength="50"
+                              required
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label for="Nacionalidad" class="form-label">Pais</label>
+                          
+                            <select>
+                              <option value="1">Chile</option>
+                              <option value="2">Brasil</option>
+                              <option value="3">Uruguay</option>
+                              <option value="4">Cuba</option>
+                              <option value="5">Mexico</option>
+                              <option value="6">Paraguay</option>
+                            </select>
+                           
+                          </div>
+                          <div class="mb-3">
+                            <label for="provincia" class="form-label">Provincia o Estado</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="provincia"
+                              placeholder="Ej: Tucumán"
+                              minlength="5"
+                              maxlength="30"
+                              required
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label for="email" class="form-label">Email </label>
+                            <input type="email" class="form-control" id="email" placeholder="Ej: MartinJuarez@email.com" minlength="5"
+                            maxlength="80"
+                            required >
+                          </div>
+                          <div class="mb-3">
+                            <label for="telefono" class="form-label">Telefono</label>
+                            <input
+                              type="tel"
+                              class="form-control"
+                              id="telefono"
+                              placeholder="381333015"
+                              min="5"
+                              max="9"
+                              maxlength="9"
+                              required
+                            />
+                          </div>
+                          <div class="mb-3">
+                            <label for="provincia" class="form-label">Consulta</label>
+                            <textarea class="form-control" id="mensaje" rows="3" placeholder="agregue aqui su consulta"  minlength="30"
+                            maxlength="150"
+                            required></textarea>
+                           
+                          </div>
+                          <div class="mb-3">
+                            <button type="submit" class="btn btn-dark">Enviar</button>
+                          </div>
+                        </div>
+
+                    </form>
                     
-                      <select>
-                        <option value="1">Chile</option>
-                        <option value="2">Brasil</option>
-                        <option value="3">Uruguay</option>
-                        <option value="4">Cuba</option>
-                        <option value="5">Mexico</option>
-                        <option value="6">Paraguay</option>
-                      </select>
-                     
-                    </div>
-                    <div class="mb-3">
-                      <label for="Provincia" class="form-label">Provincia o Estado</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="Provincia"
-                        placeholder="Ej: Tucumán"
-                        minlength="5"
-                        maxlength="30"
-                        required
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label for="Correo" class="form-label">Email </label>
-                      <input type="email" class="form-control" id="Correo" placeholder="Ej: MartinJuarez@email.com" minlength="5"
-                      maxlength="80"
-                      required >
-                    </div>
-                    <div class="mb-3">
-                      <label for="Numero" class="form-label">Telefono</label>
-                      <input
-                        type="tel"
-                        class="form-control"
-                        id="Numero"
-                        placeholder="381333015"
-                        min="5"
-                        max="9"
-                        maxlength="9"
-                        required
-                      />
-                    </div>
-                    <div class="mb-3">
-                      <label for="Duda" class="form-label">Consulta</label>
-                      <textarea class="form-control" id="Duda" rows="3" placeholder="agregue aqui su consulta"  minlength="30"
-                      maxlength="150"
-                      required></textarea>
-                     
-                    </div>
-                    <div class="mb-3">
-                      <button type="submit" class="btn btn-dark">Enviar</button>
-                    </div>
-                  </div>
                 
           </main>
     </main>
