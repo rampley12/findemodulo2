@@ -87,8 +87,9 @@ footer a:hover {
   text-align: start;
   color: #fff;
 }
-nav {
+#nosotrosNav {
   background-color: transparent;
+  margin-top: -80px;
 }
 /* Estilos para móviles */
 @media (max-width: 767px) {
