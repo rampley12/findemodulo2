@@ -6,47 +6,55 @@
     <meta name="author" content="Ramiro,Francisco,Franco,Maia" />
     <meta name="description" content="practica con javascript" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="../css/iniciodeseccion.css">
+    <link rel="stylesheet" href="../css/iniciodeseccion.css" />
     <title>Document</title>
-</head>
-<body>
-
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-        <a
-          href="../index.html"
-          class="navbar-brand text-light d-flex justify-content-sm-center d-flex justify-content-lg-start d-flex justify-content-md-center"
-          ><img src="../img/logo fondo transparente.png" alt="logo" width="100px"
-        /></a>
-        <button
-          class="navbar-toggler bg-light"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-            <li class="nav-item">
-              <a
-                class="nav-link active text-light"
-                aria-current="page"
-                href="../index.html"
-                >Inicio</a
-              >
-            </li>
-            <section>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container-fluid">
+          <a
+            href="../index.html"
+            class="navbar-brand text-light d-flex justify-content-sm-center d-flex justify-content-lg-start d-flex justify-content-md-center"
+          >
+            <img
+              src="../img/logo fondo transparente.png"
+              alt="logo"
+              width="100px"
+            />
+          </a>
+          <button
+            class="navbar-toggler bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle text-light"
@@ -70,76 +78,69 @@
                   </li>
                 </ul>
               </li>
-            </section>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="./Contacto.html"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-light"
+                  href="./Nosotros.html"
+                  aria-disabled="true"
+                  >Nosotros</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-zoom-in"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-            <li class="nav-item">
-              <a class="nav-link text-light" href="./Contacto.html"
-                >Contacto</a
-              >
-            </li>
-          
-            <li class="nav-item">
-              <a
-                class="nav-link text-light"
-                href="./Nosotros.html"
-                aria-disabled="true"
-                >Nosotros</a
-              >
-            </li>
-         
-          </ul>
-          <form class="d-flex" role="search">
+    <main>
+      <div class="login-container">
+        <div class="form-container">
+          <h2>Iniciar sesión</h2>
+          <form id="login-form">
             <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Buscar"
-              aria-label="Search"
+              type="text"
+              id="username"
+              placeholder="Nombre de usuario o correo electrónico"
+              required
             />
-            <button class="btn btn-outline-light" type="submit">
-              <i class="bi bi-zoom-in"></i>
-            </button>
+            <input
+              type="password"
+              id="password"
+              placeholder="Contraseña"
+              required
+              maxlength="50"
+              minlength="8"
+            />
+            <button type="submit">Ingresar</button>
           </form>
+          <a href="#" id="forgot-password-link">¿Olvidaste tu contraseña?</a>
         </div>
       </div>
-    </nav>
-  </header>
-  <main>
 
-    <link rel="stylesheet" href="../css/iniciodeseccion.css" />
-    <title>Document</title>
-  </head>
-  <body>
-
-    <div class="login-container">
-      <div class="form-container">
-        <h2>Iniciar sesión</h2>
-        <form id="login-form">
-          <input
-            type="text"
-            id="username"
-            placeholder="Nombre de usuario o correo electrónico"
-            required
-          />
-          <input
-            type="password"
-            id="password"
-            placeholder="Contraseña"
-            required
-            maxlength="50"
-            minlength="8"
-          />
-          <button type="submit">Ingresar</button>
-        </form>
-        <a href="#" id="forgot-password-link">¿Olvidaste tu contraseña?</a>
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Los pasos para recuperar la contraseña se muestran aquí...</p>
+        </div>
       </div>
-    </div>
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Los pasos para recuperar la contraseña se muestran aquí...</p>
-      </div>
-
     </main>
+
     <footer class="bg-dark text-light py-2 mt-auto">
       <div class="container text-md-center">
         <div class="d-flex flex-column">
@@ -148,7 +149,7 @@
               <div class="col-md-4 col-lg-4 text-center">
                 <a href="index.html"
                   ><img
-                    src="../img/logo fondo transparente.png"
+                    src="./img/logo fondo transparente.png"
                     alt="logo de la empresa"
                 /></a>
               </div>
@@ -161,7 +162,7 @@
                   <a href="./pages/nosotros.html"
                     ><h5>Acerca de nosotros</h5></a
                   >
-                  <a href="../pages/contactos.html"><h5>Contacto</h5></a>
+                  <a href="./pages/contactos.html"><h5>Contacto</h5></a>
                 </div>
               </div>
 
@@ -184,14 +185,13 @@
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-      <script src="../js/iniciodeseccion.js"></script>
-</body>
-</html>
-
-    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/iniciodeseccion.js"></script>
     <script src="../js/app.js"></script>
   </body>
 </html>
-
