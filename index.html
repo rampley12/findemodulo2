@@ -122,6 +122,7 @@
       </nav>
     </header>
     <main>
+
       <section class="container-fluid destacada">
         <video
           src="./assets/elijo-creer.mp4"
@@ -130,6 +131,11 @@
           muted
           controls
         ></video>
+
+      <!-- banner principal -->
+      <section class="my-4 container-fluid destacada">
+        <img class="img-fluid w-100 pt-5" src="./assets/argentina-campeon-qatar-2023jpg.webp" alt="">
+
         <div class="row">
           <div class="overlay rounded">
             <h1 class="display-1 mb-3">Elijo Creer</h1>
@@ -139,9 +145,23 @@
               hinchas, puedan rememorar y compartir la obtención de la Copa del
               Mundo.
             </p>
-            <button type="button" class="btn btn-primary mb-2">
+            <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#modalBanner">
               Reproducir
             </button>
+          </div>
+        </div>
+        <!-- modal banner -->
+        <div class="modal" tabindex="-1" id="modalBanner">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+                <h5 class="modal-title text-light">Elijo Creer</h5>
+                <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body d-flex justify-content-center">
+                <video class="w-100" src="./assets/elijo-creer.mp4" controls></video>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -156,11 +176,13 @@
               <div class="carousel-inner">
                 <div class="carousel-item active d-flex justify-content-center">
                   <div>
-                    <img
+                    <a data-bs-toggle="modal" data-bs-target="#modal1">
+                      <img
                       src="./assets/carousel-1/peli1.webp"
                       class="me-2"
                       alt="rapidos y furiosos reto tokio"
                     />
+                    </a>
                   </div>
                   <div>
                     <img
@@ -238,7 +260,7 @@
           </div>
         </div>
       </section>
-      <!-- carrusel 1 mobile-->
+      <!-- carrusel 1 mobile -->
       <section class="my-4 carMob container-fluid">
         <h2 class="display-3 text-light text-center mb-4">
           De Hollywood a tu casa
@@ -249,11 +271,13 @@
               <div class="carousel-inner">
                 <div class="carousel-item active d-flex justify-content-center">
                   <div>
-                    <img
+                    <a data-bs-toggle="modal" data-bs-target="#modal1">
+                      <img
                       src="./assets/carousel-1/peli1.webp"
                       class="me-2"
                       alt="rapidos y furiosos reto tokio"
                     />
+                    </a>
                   </div>
                   <div>
                     <img
@@ -331,6 +355,26 @@
         </div>
       </section>
 
+
+
+      <!-- detalle 1 -->
+      <div class="modal" tabindex="-1" id="modal1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Rapidos y furiosos - Reto Tokio</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <video class="w-100" src="./assets/trailersModal/FastFuriousTokyo.mp4" controls></video>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Ver película completa</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- carrusel 2 -->
       <section class="my-4 carDesk container-fluid">
         <h2 class="display-3 text-light text-center mb-4">
@@ -342,11 +386,13 @@
               <div class="carousel-inner">
                 <div class="carousel-item active d-flex justify-content-center">
                   <div>
-                    <img
+                    <a data-bs-toggle="modal" data-bs-target="#modal2">
+                      <img
                       src="./assets/carousel-2/peli1.webp"
                       class="me-2"
                       alt="100 metros"
                     />
+                    </a>
                   </div>
                   <div>
                     <img
@@ -427,7 +473,7 @@
           </div>
         </div>
       </section>
-      <!-- carrusel 2 mobile-->
+      <!-- carrusel 2 mobile -->
       <section class="my-4 carMob container-fluid">
         <h2 class="display-3 text-light text-center mb-4">
           Basadas en hechos reales
@@ -438,11 +484,13 @@
               <div class="carousel-inner">
                 <div class="carousel-item active d-flex justify-content-center">
                   <div>
-                    <img
+                    <a data-bs-toggle="modal" data-bs-target="#modal2">
+                      <img
                       src="./assets/carousel-2/peli1.webp"
                       class="me-2"
                       alt="100 metros"
                     />
+                    </a>
                   </div>
                   <div>
                     <img src="./assets/carousel-2/peli2.webp" alt="pele" />
@@ -522,6 +570,23 @@
           </div>
         </div>
       </section>
+      <!-- detalle 2 -->
+      <div class="modal" tabindex="-1" id="modal2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">100 Metros</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <video class="w-100" src="./assets/trailersModal/100METROS.mp4" controls></video>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Ver película completa</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- carrusel 3 -->
       <section class="my-4 carDesk container-fluid">
         <h2 class="display-3 text-light text-center mb-4">Suspenso y terror</h2>
@@ -531,11 +596,13 @@
               <div class="carousel-inner">
                 <div class="carousel-item active d-flex justify-content-center">
                   <div>
-                    <img
+                    <a data-bs-toggle="modal" data-bs-target="#modal3">
+                      <img
                       src="./assets/carousel-3/peli1.webp"
                       class="me-2"
                       alt="juego del miedo"
                     />
+                    </a>
                   </div>
                   <div>
                     <img
@@ -613,10 +680,10 @@
           </div>
         </div>
       </section>
-      <!-- carrusel 3 mobile-->
+      <!-- carrusel 3 mobile -->
       <section class="my-4 carMob container-fluid">
         <h2 class="display-3 text-light text-center mb-4">
-          Basadas en hechos reales
+          Suspenso y terror
         </h2>
         <div class="row">
           <div class="col">
@@ -624,11 +691,13 @@
               <div class="carousel-inner">
                 <div class="carousel-item active d-flex justify-content-center">
                   <div>
-                    <img
+                    <a data-bs-toggle="modal" data-bs-target="#modal3">
+                      <img
                       src="./assets/carousel-3/peli1.webp"
                       class="me-2"
                       alt="juego del miedo"
                     />
+                    </a>
                   </div>
                   <div>
                     <img
@@ -708,6 +777,23 @@
           </div>
         </div>
       </section>
+      <!-- detalle 3 -->
+      <div class="modal" tabindex="-1" id="modal3">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">El juego del miedo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <video class="w-100" src="./assets/trailersModal/Saw.mp4" controls></video>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Ver película completa</button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- carrusel 4 -->
       <section class="my-4 carDesk container-fluid">
         <h2 class="display-3 text-light text-center mb-4">Anime</h2>
@@ -717,11 +803,13 @@
               <div class="carousel-inner">
                 <div class="carousel-item active d-flex justify-content-center">
                   <div>
-                    <img
+                    <a data-bs-toggle="modal" data-bs-target="#modal4">
+                      <img
                       src="./assets/carousel-4/peli5.webp"
                       class="me-2"
                       alt="one piece"
                     />
+                    </a>
                   </div>
                   <div>
                     <img
@@ -799,10 +887,10 @@
           </div>
         </div>
       </section>
-      <!-- carrusel 4 mobile-->
+      <!-- carrusel 4 mobile -->
       <section class="my-4 carMob container-fluid">
         <h2 class="display-3 text-light text-center mb-4">
-          Basadas en hechos reales
+          Anime
         </h2>
         <div class="row">
           <div class="col">
@@ -810,11 +898,13 @@
               <div class="carousel-inner">
                 <div class="carousel-item active d-flex justify-content-center">
                   <div>
-                    <img
+                    <a data-bs-toggle="modal" data-bs-target="#modal4">
+                      <img
                       src="./assets/carousel-4/peli5.webp"
                       class="me-2"
                       alt="one piece"
                     />
+                    </a>
                   </div>
                   <div>
                     <img
@@ -894,6 +984,163 @@
           </div>
         </div>
       </section>
+
+      <!-- detalle 4 -->
+      <div class="modal" tabindex="-1" id="modal4">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">One Piece</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <video class="w-100" src="./assets/trailersModal/OnePiece.mp4" controls></video>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">Ver película completa</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- publicidad -->
+      <section class="my-4 container-fluid destacada">
+        <video src="./assets/Muchachos.mp4" class="w-100" autoplay muted controls></video>
+        <div class="row">
+          <div class="overlay rounded">
+            <h3 class="display-1 mb-3 text-center">Muchachos</h3>
+            <p class="lead text-center">Próximo estreno...</p>
+          </div>
+        </div>
+      </section>
+      <!-- carrusel 5 -->
+      <section class="my-4 carDesk container-fluid">
+        <h2 class="display-3 text-light text-center mb-4">
+          Nuestra sugerencia
+        </h2>
+        <div class="row">
+          <div class="col">
+            <div id="carouselSlider5" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active d-flex justify-content-around carru5">
+                  <div>
+                    <img src="./assets/carousel-5/scale8.jpeg" alt="haunting in venice">
+                  </div>
+                  <div>
+                    <img src="./assets/carousel-5/scale2.jpeg" alt="titanic">
+                  </div>
+                  <div>
+                    <img src="./assets/carousel-5/scale4.jpeg" alt="dungeon and dragons">
+                  </div>
+                </div>
+                <div class="carousel-item d-flex justify-content-around carru5">
+                  <div>
+                    <img src="./assets/carousel-5/scale5.jpeg" alt="gladiador">
+                  </div>
+                  <div>
+                    <img src="./assets/carousel-5/scale6.jpeg" alt="9 reinas">
+                  </div>
+                  <div>
+                    <img src="./assets/carousel-5/scale7.jpeg" alt="the simpsons">
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselSlider5"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselSlider5"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- carrusel 5 mobile-->
+      <section class="my-4 carMob container-fluid">
+        <h2 class="display-3 text-light text-center mb-4">
+          Nuestra selección
+        </h2>
+        <div class="row">
+          <div class="col">
+            <div id="carouselSliderM5" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-center">
+                    <img src="./assets/carousel-5/scale8.jpeg" class="w-75" alt="haunting in venice">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img src="./assets/carousel-5/scale2.jpeg" class="w-75" alt="titanic">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img src="./assets/carousel-5/scale4.jpeg" class="w-75" alt="dungeon and dragons">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img src="./assets/carousel-5/scale5.jpeg" class="w-75" alt="gladiador">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img src="./assets/carousel-5/scale6.jpeg" class="w-75" alt="9 reinas">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center">
+                    <img src="./assets/carousel-5/scale7.jpeg" class="w-75" alt="the simpsons">
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselSliderM5"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselSliderM5"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
     <footer class="bg-dark text-light py-2 mt-auto">
       <div class="container text-md-center">

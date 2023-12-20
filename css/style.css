@@ -72,6 +72,12 @@ footer a:hover {
   }
 }
 /* Franco */
+h1, h2, h3, h5 {
+  font-family: Shrikhand;
+}
+p {
+  font-family: Montserrat;
+}
 .destacada {
   position: relative;
   width: 100%;
@@ -80,7 +86,7 @@ footer a:hover {
   background-color: rgba(0, 0, 0, 0.238);
   width: 60%;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: start;
