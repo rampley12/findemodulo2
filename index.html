@@ -24,7 +24,7 @@
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-transparent">
+      <nav class="navbar navbar-expand-lg  fixed-top">
         <div class="container-fluid">
           <a
             href="../index.html"
@@ -97,14 +97,6 @@
                   >Nosotros</a
                 >
               </li>
-              <li class="nav-item administradorOculto" id="administrador">
-                <a class="nav-link text-light" href="./pages/contactos.html"
-                  >Administrador</a
-                >
-              </li>
-              <li class="nav-item administradorOculto" id="cerrarUser">
-                <a class="nav-link text-light" href="#">Cerrar</a>
-              </li>
             </ul>
             <form class="d-flex" role="search">
               <input
@@ -122,20 +114,9 @@
       </nav>
     </header>
     <main>
-
-      <section class="container-fluid destacada">
-        <video
-          src="./assets/elijo-creer.mp4"
-          class="w-100"
-          autoplay
-          muted
-          controls
-        ></video>
-
       <!-- banner principal -->
       <section class="my-4 container-fluid destacada">
         <img class="img-fluid w-100 pt-5" src="./assets/argentina-campeon-qatar-2023jpg.webp" alt="">
-
         <div class="row">
           <div class="overlay rounded">
             <h1 class="display-1 mb-3">Elijo Creer</h1>
@@ -354,9 +335,6 @@
           </div>
         </div>
       </section>
-
-
-
       <!-- detalle 1 -->
       <div class="modal" tabindex="-1" id="modal1">
         <div class="modal-dialog">
@@ -374,7 +352,6 @@
           </div>
         </div>
       </div>
-
       <!-- carrusel 2 -->
       <section class="my-4 carDesk container-fluid">
         <h2 class="display-3 text-light text-center mb-4">
@@ -438,10 +415,7 @@
                     />
                   </div>
                   <div>
-                    <img
-                      src="./assets/carousel-2/peli8.webp"
-                      alt="en busca de la felicidad"
-                    />
+                    <img src="./assets/carousel-2/peli8.webp" alt="en busca de la felicidad" />
                   </div>
                 </div>
               </div>
@@ -493,7 +467,10 @@
                     </a>
                   </div>
                   <div>
-                    <img src="./assets/carousel-2/peli2.webp" alt="pele" />
+                    <img
+                      src="./assets/carousel-2/peli2.webp"
+                      alt="pele"
+                    />
                   </div>
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
@@ -520,10 +497,7 @@
                     />
                   </div>
                   <div>
-                    <img
-                      src="./assets/carousel-2/peli6.webp"
-                      alt="inseparables"
-                    />
+                    <img src="./assets/carousel-2/peli6.webp" alt="inseparables" />
                   </div>
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
@@ -535,10 +509,7 @@
                     />
                   </div>
                   <div>
-                    <img
-                      src="./assets/carousel-2/peli8.webp"
-                      alt="en busca de la felicidad"
-                    />
+                    <img src="./assets/carousel-2/peli8.webp" alt="en busca de la felicidad" />
                   </div>
                 </div>
               </div>
@@ -589,7 +560,9 @@
       </div>
       <!-- carrusel 3 -->
       <section class="my-4 carDesk container-fluid">
-        <h2 class="display-3 text-light text-center mb-4">Suspenso y terror</h2>
+        <h2 class="display-3 text-light text-center mb-4">
+          Suspenso y terror
+        </h2>
         <div class="row">
           <div class="col">
             <div id="carouselSlider3" class="carousel slide carousel-fade">
@@ -730,10 +703,7 @@
                     />
                   </div>
                   <div>
-                    <img
-                      src="./assets/carousel-3/peli6.webp"
-                      alt="juego del miedo 2"
-                    />
+                    <img src="./assets/carousel-3/peli6.webp" alt="juego del miedo 2" />
                   </div>
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
@@ -796,7 +766,9 @@
       </div>
       <!-- carrusel 4 -->
       <section class="my-4 carDesk container-fluid">
-        <h2 class="display-3 text-light text-center mb-4">Anime</h2>
+        <h2 class="display-3 text-light text-center mb-4">
+          Anime
+        </h2>
         <div class="row">
           <div class="col">
             <div id="carouselSlider4" class="carousel slide carousel-fade">
@@ -937,10 +909,7 @@
                     />
                   </div>
                   <div>
-                    <img
-                      src="./assets/carousel-4/peli6.webp"
-                      alt="sailor moon"
-                    />
+                    <img src="./assets/carousel-4/peli6.webp" alt="sailor moon" />
                   </div>
                 </div>
                 <div class="carousel-item d-flex justify-content-center">
@@ -984,7 +953,6 @@
           </div>
         </div>
       </section>
-
       <!-- detalle 4 -->
       <div class="modal" tabindex="-1" id="modal4">
         <div class="modal-dialog">
@@ -1140,7 +1108,6 @@
           </div>
         </div>
       </section>
-
     </main>
     <footer class="bg-dark text-light py-2 mt-auto">
       <div class="container text-md-center">
@@ -1191,7 +1158,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/iniciodeseccion.js"></script>
-    <script src="./js/cerrar.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
