@@ -9,6 +9,9 @@
 .administradorOculto {
   display: none;
 }
+.cuentaOculta {
+  display: none;
+}
 
 .administradorMostrar {
   display: inline;
