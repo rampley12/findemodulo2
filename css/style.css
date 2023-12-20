@@ -5,6 +5,14 @@
   margin: 0;
   padding: 0;
 }
+
+.administradorOculto {
+  display: none;
+}
+
+.administradorMostrar {
+  display: inline;
+}
 p {
   font-family: "Montserrat", sans-serif;
 }
@@ -72,6 +80,7 @@ p {
 }
 .destacada {
   position: relative;
+  width: 100%;
 }
 .overlay {
   background-color: rgba(0, 0, 0, 0.238);
@@ -83,9 +92,7 @@ p {
   text-align: start;
   color: #fff;
 }
-nav{
-  background-color: black;
-}
+
 /* Estilos para móviles */
 @media (max-width: 767px) {
   .overlay p {
@@ -108,7 +115,8 @@ nav{
   .carMob {
     display: none;
   }
-  .carru5 img {
-    height: 70vh;
-  }
+}
+
+.reproducir-btn:hover {
+  background-color: #2980b9;
 }
