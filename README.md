@@ -7,7 +7,7 @@ pagina de contacto con un formulario.
 pagina de sobre nosotros con descripcion de los creadores.
 seccion administracion realizacion de un crud.
 uso de logica javascript para poder hacer el login, el registro del cliente.
-ChatGPT
+
 Plataforma de Películas - README
 Este proyecto es una plataforma web para la visualización de películas, implementando tecnologías web como HTML, CSS, Bootstrap y JavaScript. Además, se ha incorporado una sección de administración que permite realizar operaciones CRUD (Crear, Leer, Actualizar y Borrar).
 
