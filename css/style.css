@@ -15,6 +15,7 @@
 }
 p {
   font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
 }
 .card-title {
   font-family: "Shrikhand", serif;
@@ -86,8 +87,8 @@ footer a:hover {
   text-align: start;
   color: #fff;
 }
-nav{
-  background-color: black;
+nav {
+  background-color: transparent;
 }
 /* Estilos para móviles */
 @media (max-width: 767px) {
@@ -116,8 +117,6 @@ nav{
   }
 }
 
-
 .reproducir-btn:hover {
   background-color: #2980b9;
 }
-
